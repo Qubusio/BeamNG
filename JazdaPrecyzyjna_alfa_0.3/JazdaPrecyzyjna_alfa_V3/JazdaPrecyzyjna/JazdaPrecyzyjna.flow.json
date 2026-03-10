@@ -2,7 +2,7 @@
   "activeGraphId":110,
   "authors":"Stowja Stara",
   "currentGraphID":110,
-  "date":1765922745,
+  "date":1773184500,
   "debugEnabled":false,
   "description":"Przejedź przez praking w jak najkrótszym czasie",
   "difficulty":40,
@@ -84,7 +84,7 @@
         ],
         [
           353,
-          "loaded",
+          "flow",
           100,
           "flow",
           false
@@ -267,16 +267,16 @@
           "type":"events/onUpdate"
         },
         "9":{
-          "alpha":0.75000000000000022204,
+          "alpha":0.75000000000000044409,
           "backgroundColor":[
-            0.36590123176574718133,
-            0.17825736105442058221,
+            0.36590123176574734787,
+            0.17825736105442069324,
             0,
             0.50000000000000000000
           ],
           "borderColor":[
             0.52829241752624511719,
-            0.35541573166847245657,
+            0.35541573166847256759,
             0,
             1
           ],
@@ -303,15 +303,15 @@
           "type":"debug/comment"
         },
         "17":{
-          "alpha":0.75000000000000022204,
+          "alpha":0.75000000000000044409,
           "backgroundColor":[
             1,
             0,
-            0.75708580017089877057,
+            0.75708580017089921466,
             0.50000000000000000000
           ],
           "borderColor":[
-            0.50055456161499001233,
+            0.50055456161498979029,
             0,
             1,
             1
@@ -332,7 +332,7 @@
           "simple":false,
           "textColor":[
             0.97942489385604858398,
-            0.74868035316467318463,
+            0.74868035316467362872,
             1,
             1
           ],
@@ -447,10 +447,10 @@
             95.91193389892578125000
           ],
           "rotation":[
-            -0.00129182485397905285,
-            -0.00124451995361596649,
+            -0.00129182485397905372,
+            -0.00124451995361596801,
             -0.71275496482849165503,
-            0.70141077041625921051
+            0.70141077041625898847
           ],
           "scale":[
             1,
@@ -551,10 +551,10 @@
             82.69610595703125000000
           ],
           "rotation":[
-            0.00278687371443809900,
-            -0.00003044842169084738,
-            -0.01092496028719280692,
-            -0.99993638306742715915
+            0.00278687371443810073,
+            -0.00003044842169084740,
+            -0.01092496028719280345,
+            -0.99993638306742671507
           ],
           "scale":[
             1,
@@ -617,9 +617,9 @@
             88.61967079328084651024
           ],
           "rotation":[
-            -0.00982238372104192632,
-            -0.00994096978804067700,
-            0.71126736319896421978,
+            -0.00982238372104193153,
+            -0.00994096978804068047,
+            0.71126736319896399774,
             -0.70278263776625959913
           ],
           "scale":[
@@ -900,10 +900,10 @@
             89.16368103027343750000
           ],
           "rotation":[
-            0.00195244589205265649,
-            -0.00198885549567798811,
-            -0.71360570107246457106,
-            -0.70054185567128401946
+            0.00195244589205265801,
+            -0.00198885549567798985,
+            -0.71360570107246468208,
+            -0.70054185567128424150
           ],
           "scale":[
             1,
@@ -921,10 +921,10 @@
         "list":{}
       },
       "viewPos":[
-        1684.30236816406250000000,
-        -766.44567871093750000000
+        669.49993896484375000000,
+        -253.50006103515625000000
       ],
-      "viewZoom":0.75000000000000000000
+      "viewZoom":0.74999994039535522461
     },
     "3":{
       "description":"This is the description for graph States",
@@ -932,9 +932,23 @@
       "isStateGraph":true,
       "links":[
         [
+          111,
+          "success",
+          53,
+          "flow",
+          false
+        ],
+        [
           259,
           "success",
           111,
+          "flow",
+          false
+        ],
+        [
+          61,
+          "success",
+          19,
           "flow",
           false
         ],
@@ -954,8 +968,8 @@
         ],
         [
           111,
-          "success",
-          53,
+          "fail",
+          61,
           "flow",
           false
         ],
@@ -1154,10 +1168,58 @@
             ]
           ],
           "pos":[
-            1320,
-            -4
+            1376,
+            -67
           ],
           "targetGraphId":52,
+          "type":"states/stateNode"
+        },
+        "61":{
+          "customColor":[
+            1,
+            0.62636584043502807617,
+            0,
+            1
+          ],
+          "data":{},
+          "dynamicMode":"repeat",
+          "hiddenPins":{
+            "p_in":{
+              "flow":false
+            },
+            "p_out":{
+              "fail":false,
+              "success":false
+            }
+          },
+          "pins":[
+            [
+              "out",
+              "state",
+              "success",
+              null,
+              "This is a flow pin."
+            ],
+            [
+              "out",
+              "state",
+              "fail",
+              null,
+              "This is a flow pin."
+            ],
+            [
+              "in",
+              "state",
+              "flow",
+              null,
+              "This is a flow pin."
+            ]
+          ],
+          "pos":[
+            1376,
+            81
+          ],
+          "targetGraphId":60,
           "type":"states/stateNode"
         },
         "111":{
@@ -1264,10 +1326,10 @@
         "list":{}
       },
       "viewPos":[
-        -10.33325195312500000000,
-        -293
+        -121.13690185546875000000,
+        -434.12652587890625000000
       ],
-      "viewZoom":1
+      "viewZoom":0.74999994039535522461
     },
     "14":{
       "description":"This is the description for graph Graph 14",
@@ -1275,17 +1337,17 @@
       "links":{},
       "name":"Graph 14",
       "nodes":{},
-      "showTab":true,
+      "showTab":false,
       "type":"graph",
       "variables":{
         "customVariableOrder":{},
         "list":{}
       },
       "viewPos":[
-        -10.33325195312500000000,
-        -293
+        -116.25169372558593750000,
+        -227.22473144531250000000
       ],
-      "viewZoom":1
+      "viewZoom":0.75000000000000000000
     },
     "18":{
       "description":"This is the description for graph New State",
@@ -1302,20 +1364,6 @@
           27,
           "PlayerID",
           88,
-          "vehId",
-          true
-        ],
-        [
-          88,
-          "flow",
-          156,
-          "flow",
-          false
-        ],
-        [
-          27,
-          "npcID",
-          156,
           "vehId",
           true
         ],
@@ -1337,6 +1385,20 @@
           27,
           "crashCarID",
           10,
+          "vehId",
+          true
+        ],
+        [
+          88,
+          "flow",
+          156,
+          "flow",
+          false
+        ],
+        [
+          27,
+          "npcID",
+          156,
           "vehId",
           true
         ]
@@ -1467,8 +1529,8 @@
             ]
           ],
           "pos":[
-            18,
-            -259
+            66,
+            -223
           ],
           "type":"states/transitionStack"
         },
@@ -1542,33 +1604,19 @@
         "list":{}
       },
       "viewPos":[
-        85.75506591796875000000,
-        -514.36950683593750000000
+        -132.13690185546875000000,
+        -491.12652587890625000000
       ],
-      "viewZoom":0.75000000000000000000
+      "viewZoom":0.74999994039535522461
     },
     "52":{
       "description":"This is the description for graph New State",
       "dirty":false,
       "links":[
         [
-          289,
-          "Damage",
-          314,
-          "value",
-          false
-        ],
-        [
           113,
           "flow",
           48,
-          "flow",
-          false
-        ],
-        [
-          48,
-          "flow",
-          57,
           "flow",
           false
         ],
@@ -1587,13 +1635,6 @@
           false
         ],
         [
-          314,
-          "value",
-          64,
-          "text",
-          false
-        ],
-        [
           289,
           "TimeCalc",
           64,
@@ -1601,10 +1642,10 @@
           false
         ],
         [
-          289,
-          "Damage",
-          64,
-          "points",
+          48,
+          "flow",
+          57,
+          "flow",
           false
         ],
         [
@@ -1691,17 +1732,9 @@
           },
           "dynamicMode":"once",
           "hardcodedPins":{
-            "autoPoints":{
-              "type":"bool",
-              "value":true
-            },
             "cont":{
               "type":"string",
               "value":"Continue"
-            },
-            "maxPoints":{
-              "type":"number",
-              "value":100
             },
             "medal":{
               "type":"string",
@@ -1723,7 +1756,7 @@
               "flow":false,
               "maxPoints":true,
               "medal":true,
-              "points":false,
+              "points":true,
               "portraitFail":true,
               "portraitSuccess":true,
               "progress":false,
@@ -1824,23 +1857,6 @@
             -245
           ],
           "type":"states/transitionStack"
-        },
-        "314":{
-          "data":{},
-          "dynamicMode":"repeat",
-          "hiddenPins":{
-            "p_in":{
-              "value":false
-            },
-            "p_out":{
-              "value":false
-            }
-          },
-          "pos":[
-            10,
-            -314
-          ],
-          "type":"util/tostring"
         }
       },
       "showTab":true,
@@ -1850,10 +1866,278 @@
         "list":{}
       },
       "viewPos":[
-        -646.67761230468750000000,
-        -575.12402343750000000000
+        -344.13690185546875000000,
+        -389.12652587890625000000
       ],
-      "viewZoom":0.75000000000000000000
+      "viewZoom":0.74999994039535522461
+    },
+    "60":{
+      "description":"This is the description for graph New State",
+      "dirty":false,
+      "links":[
+        [
+          380,
+          "flow",
+          429,
+          "flow",
+          false
+        ],
+        [
+          364,
+          "flow",
+          373,
+          "flow",
+          false
+        ],
+        [
+          429,
+          "flow",
+          364,
+          "flow",
+          false
+        ],
+        [
+          370,
+          "flow",
+          380,
+          "flow",
+          false
+        ],
+        [
+          370,
+          "enterState",
+          380,
+          "reset",
+          false
+        ],
+        [
+          605,
+          "TimeCalc",
+          380,
+          "timeStr",
+          false
+        ]
+      ],
+      "name":"Wypadek",
+      "nodes":{
+        "364":{
+          "data":{
+            "blocksOnResetGameplay":true
+          },
+          "dynamicMode":"repeat",
+          "hiddenPins":{
+            "p_in":{
+              "flow":false
+            },
+            "p_out":{
+              "flow":false,
+              "value":true
+            }
+          },
+          "pos":[
+            1018,
+            246
+          ],
+          "type":"events/controlsReset"
+        },
+        "370":{
+          "data":{},
+          "dynamicMode":"repeat",
+          "hiddenPins":{
+            "p_in":{},
+            "p_out":{
+              "dtRaw":true,
+              "dtReal":true,
+              "dtSim":true,
+              "enterState":false,
+              "exitState":false,
+              "flow":false
+            }
+          },
+          "pos":[
+            -466,
+            246
+          ],
+          "type":"events/onUpdate"
+        },
+        "373":{
+          "data":{},
+          "dynamicMode":"repeat",
+          "hiddenPins":{
+            "p_in":{
+              "flow":false
+            },
+            "p_out":{}
+          },
+          "pins":[
+            [
+              "in",
+              "flow",
+              "flow",
+              null,
+              "This is a flow pin.",
+              true
+            ]
+          ],
+          "pos":[
+            1200,
+            260
+          ],
+          "transitionName":"success",
+          "type":"states/transition"
+        },
+        "380":{
+          "customColor":[
+            1,
+            0.04111897945404052734,
+            0.04111897945404052734,
+            0.69999998807907104492
+          ],
+          "customName":"Przegrana",
+          "data":{
+            "includeRetryButton":true,
+            "includeScenarioButton":false
+          },
+          "dynamicMode":"once",
+          "hardcodedPins":{
+            "cont":{
+              "type":"string",
+              "value":"Continue"
+            },
+            "failed":{
+              "type":"bool",
+              "value":true
+            },
+            "title":{
+              "type":"string",
+              "value":"Wygrana"
+            }
+          },
+          "hiddenPins":{
+            "p_in":{
+              "attempt":true,
+              "autoPoints":true,
+              "change":true,
+              "cont":false,
+              "failString":true,
+              "failed":true,
+              "flow":false,
+              "maxPoints":true,
+              "medal":true,
+              "points":true,
+              "portraitFail":true,
+              "portraitSuccess":true,
+              "progress":false,
+              "progressKey":false,
+              "reset":false,
+              "stats":true,
+              "successString":true,
+              "text":false,
+              "timeStr":false,
+              "title":false
+            },
+            "p_out":{
+              "cont":false,
+              "flow":false
+            }
+          },
+          "options":[
+            "cont"
+          ],
+          "pos":[
+            528,
+            246
+          ],
+          "type":"ui/endScreen"
+        },
+        "429":{
+          "data":{},
+          "dynamicMode":"repeat",
+          "hardcodedPins":{
+            "freeze":{
+              "type":"bool",
+              "value":true
+            }
+          },
+          "hiddenPins":{
+            "p_in":{
+              "flow":false,
+              "freeze":false,
+              "vehId":false
+            },
+            "p_out":{
+              "flow":false
+            }
+          },
+          "pos":[
+            808,
+            232
+          ],
+          "type":"vehicle/freeze"
+        },
+        "605":{
+          "data":{},
+          "dynamicMode":"repeat",
+          "hiddenPins":{
+            "p_in":{
+              "flow":false
+            },
+            "p_out":{
+              "Damage":false,
+              "TimeCalc":false,
+              "flow":false
+            }
+          },
+          "pins":[
+            [
+              "out",
+              "flow",
+              "flow",
+              null,
+              "This is a flow pin.",
+              true
+            ],
+            [
+              "in",
+              "flow",
+              "flow",
+              null,
+              "This is a flow pin.",
+              true
+            ],
+            [
+              "out",
+              "number",
+              "TimeCalc",
+              null,
+              ""
+            ],
+            [
+              "out",
+              "number",
+              "Damage",
+              null,
+              ""
+            ]
+          ],
+          "pos":[
+            -522,
+            8
+          ],
+          "type":"states/transitionStack"
+        }
+      },
+      "showTab":true,
+      "type":"graph",
+      "variables":{
+        "customVariableOrder":{},
+        "list":{}
+      },
+      "viewPos":[
+        -436.50000000000000000000,
+        -250.00003051757812500000
+      ],
+      "viewZoom":0.74999994039535522461
     },
     "110":{
       "description":"This is the description for graph New State",
@@ -1878,14 +2162,7 @@
           "enterState",
           154,
           "off",
-          true
-        ],
-        [
-          112,
-          "flow",
-          152,
-          "flow",
-          true
+          false
         ],
         [
           150,
@@ -1930,18 +2207,11 @@
           false
         ],
         [
-          221,
-          "value",
-          78,
-          "Time",
-          true
-        ],
-        [
           175,
           "elapsed",
           78,
           "TimeCalc",
-          true
+          false
         ],
         [
           287,
@@ -1969,6 +2239,27 @@
           "enterState",
           75,
           "off",
+          true
+        ],
+        [
+          189,
+          "flow",
+          71,
+          "flow",
+          false
+        ],
+        [
+          201,
+          "pos",
+          71,
+          "position",
+          true
+        ],
+        [
+          201,
+          "scl",
+          71,
+          "scale",
           true
         ],
         [
@@ -2007,25 +2298,88 @@
           true
         ],
         [
-          189,
+          112,
           "flow",
-          71,
+          606,
           "flow",
           false
         ],
         [
-          201,
-          "pos",
-          71,
-          "position",
-          true
+          50,
+          "PlayerID",
+          606,
+          "vehIdA",
+          false
         ],
         [
-          201,
+          50,
+          "npcID",
+          606,
+          "vehIdB",
+          false
+        ],
+        [
+          112,
+          "flow",
+          55,
+          "flow",
+          false
+        ],
+        [
+          50,
+          "PlayerID",
+          55,
+          "vehIdA",
+          false
+        ],
+        [
+          50,
+          "crashCarID",
+          55,
+          "vehIdB",
+          false
+        ],
+        [
+          606,
+          "touching",
+          58,
+          "flow",
+          false
+        ],
+        [
+          55,
+          "touching",
+          58,
+          "flow",
+          false
+        ],
+        [
+          12,
+          "pos",
+          350,
+          "position",
+          false
+        ],
+        [
+          12,
           "scl",
-          71,
+          350,
           "scale",
-          true
+          false
+        ],
+        [
+          175,
+          "flow",
+          177,
+          "flow",
+          false
+        ],
+        [
+          175,
+          "elapsed",
+          177,
+          "value",
+          false
         ],
         [
           112,
@@ -2044,23 +2398,37 @@
         [
           112,
           "flow",
-          350,
+          287,
+          "flow",
+          true
+        ],
+        [
+          50,
+          "PlayerID",
+          287,
+          "vehId",
+          true
+        ],
+        [
+          112,
+          "flow",
+          189,
           "flow",
           false
         ],
         [
-          348,
-          "pos",
-          350,
-          "position",
-          false
+          112,
+          "enterState",
+          189,
+          "reset",
+          true
         ],
         [
-          348,
-          "scl",
-          350,
-          "scale",
-          false
+          201,
+          "pos",
+          189,
+          "position",
+          true
         ],
         [
           352,
@@ -2088,60 +2456,53 @@
           "crashCarID",
           346,
           "vehId",
-          false
-        ],
-        [
-          175,
-          "flow",
-          177,
-          "flow",
-          false
-        ],
-        [
-          175,
-          "elapsed",
-          177,
-          "value",
-          false
-        ],
-        [
-          175,
-          "elapsed",
-          221,
-          "value",
-          false
-        ],
-        [
-          112,
-          "flow",
-          287,
-          "flow",
-          true
-        ],
-        [
-          112,
-          "flow",
-          189,
-          "flow",
-          false
-        ],
-        [
-          112,
-          "enterState",
-          189,
-          "reset",
-          true
-        ],
-        [
-          201,
-          "pos",
-          189,
-          "position",
           true
         ]
       ],
       "name":"Gejmplej",
       "nodes":{
+        "12":{
+          "data":{},
+          "displayMode":"halfBox",
+          "dynamicMode":"repeat",
+          "hiddenPins":{
+            "p_in":{},
+            "p_out":{
+              "pos":false,
+              "rot":false,
+              "scl":false
+            }
+          },
+          "markerClr":[
+            1,
+            0,
+            0.50000000000000000000,
+            0.25000000000000000000
+          ],
+          "mode":"gizmo",
+          "pos":[
+            2404,
+            -1187
+          ],
+          "position":[
+            -704.54583740234375000000,
+            730.04864501953125000000,
+            89.11358642578125000000
+          ],
+          "rotation":[
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale":[
+            6.81899976730346679688,
+            1,
+            1
+          ],
+          "type":"types/transform",
+          "useQuatForRotation":false
+        },
         "50":{
           "data":{},
           "dynamicMode":"repeat",
@@ -2150,6 +2511,7 @@
               "flow":false
             },
             "p_out":{
+              "PlayerID":false,
               "ToiToiID":false,
               "crashCarID":false,
               "flow":false,
@@ -2172,6 +2534,13 @@
               null,
               "This is a flow pin.",
               true
+            ],
+            [
+              "out",
+              "number",
+              "PlayerID",
+              null,
+              ""
             ],
             [
               "out",
@@ -2200,6 +2569,58 @@
             -1395
           ],
           "type":"states/transitionStack"
+        },
+        "55":{
+          "data":{},
+          "dynamicMode":"repeat",
+          "hiddenPins":{
+            "p_in":{
+              "flow":false,
+              "vehIdA":false,
+              "vehIdB":false
+            },
+            "p_out":{
+              "flow":false,
+              "touching":false,
+              "touchingb":true,
+              "vehId1":true,
+              "vehId2":true,
+              "vehId3":true,
+              "vehId4":true,
+              "vehId5":true
+            }
+          },
+          "pos":[
+            1026,
+            -1719
+          ],
+          "type":"vehicle/touching"
+        },
+        "58":{
+          "data":{},
+          "dynamicMode":"repeat",
+          "hiddenPins":{
+            "p_in":{
+              "flow":false
+            },
+            "p_out":{}
+          },
+          "pins":[
+            [
+              "in",
+              "flow",
+              "flow",
+              null,
+              "This is a flow pin.",
+              true
+            ]
+          ],
+          "pos":[
+            1508,
+            -1687
+          ],
+          "transitionName":"fail",
+          "type":"states/transition"
         },
         "71":{
           "data":{
@@ -2273,7 +2694,7 @@
             ],
             [
               "in",
-              "string",
+              "number",
               "Time",
               null,
               ""
@@ -2315,8 +2736,8 @@
             }
           },
           "pos":[
-            -137,
-            -7
+            -319,
+            5
           ],
           "type":"events/onUpdate"
         },
@@ -2446,9 +2867,10 @@
               "flow":false
             }
           },
+          "on":false,
           "pos":[
-            2404,
-            -511
+            2418,
+            -417
           ],
           "type":"logic/flowSwitch"
         },
@@ -2496,7 +2918,7 @@
           "type":"debug/comment"
         },
         "159":{
-          "alpha":0.75000000000000011102,
+          "alpha":0.75000000000000033307,
           "backgroundColor":[
             0.50000000000000000000,
             0.50000000000000000000,
@@ -2504,9 +2926,9 @@
             0.50000000000000000000
           ],
           "borderColor":[
-            0.80000001192092884406,
-            0.80000001192092884406,
-            0.80000001192092884406,
+            0.80000001192092862201,
+            0.80000001192092862201,
+            0.80000001192092862201,
             1
           ],
           "commentSize":[
@@ -2565,8 +2987,8 @@
             }
           },
           "pos":[
-            808,
-            -655
+            710,
+            -645
           ],
           "type":"gameplay/timers/simpleTimer"
         },
@@ -2712,23 +3134,6 @@
           "type":"types/transform",
           "useQuatForRotation":false
         },
-        "221":{
-          "data":{},
-          "dynamicMode":"repeat",
-          "hiddenPins":{
-            "p_in":{
-              "value":false
-            },
-            "p_out":{
-              "value":false
-            }
-          },
-          "pos":[
-            1220,
-            -549
-          ],
-          "type":"util/tostring"
-        },
         "287":{
           "data":{},
           "dynamicMode":"repeat",
@@ -2751,15 +3156,15 @@
             }
           },
           "pos":[
-            452,
-            604
+            780,
+            371
           ],
           "type":"vehicle/vehicleMapData"
         },
         "316":{
           "data":{},
           "dynamicMode":"repeat",
-          "fileName":"/replays/scriptai/tracks/crash.track.json",
+          "fileName":"/replays/scriptai/tracks/auto_parking_cruise.track.json",
           "hiddenPins":{
             "p_in":{},
             "p_out":{
@@ -2774,7 +3179,7 @@
         },
         "346":{
           "data":{
-            "handBrakeWhenFinished":false,
+            "handBrakeWhenFinished":true,
             "straightenWheelsWhenFinished":false
           },
           "dynamicMode":"repeat",
@@ -2792,52 +3197,10 @@
           },
           "pos":[
             3328,
-            -1224
+            -1239
           ],
           "timeScale":1,
           "type":"vehicle/ai/scriptAI/followPath"
-        },
-        "348":{
-          "data":{},
-          "displayMode":"halfBox",
-          "dynamicMode":"repeat",
-          "hiddenPins":{
-            "p_in":{},
-            "p_out":{
-              "pos":false,
-              "rot":false,
-              "scl":false
-            }
-          },
-          "markerClr":[
-            1,
-            0,
-            0.50000000000000000000,
-            0.25000000000000000000
-          ],
-          "mode":"gizmo",
-          "pos":[
-            2390,
-            -1169
-          ],
-          "position":[
-            -713.87731933593750000000,
-            752.16534423828125000000,
-            91.79785919189453125000
-          ],
-          "rotation":[
-            0,
-            0,
-            0.71746343374252319336,
-            0.69659614562988281250
-          ],
-          "scale":[
-            11.14556935485177291412,
-            1,
-            1
-          ],
-          "type":"types/transform",
-          "useQuatForRotation":false
         },
         "350":{
           "data":{
@@ -2883,10 +3246,36 @@
             }
           },
           "pos":[
-            2992,
-            -1196
+            3006,
+            -1117
           ],
           "type":"logic/flowSwitch"
+        },
+        "606":{
+          "data":{},
+          "dynamicMode":"repeat",
+          "hiddenPins":{
+            "p_in":{
+              "flow":false,
+              "vehIdA":false,
+              "vehIdB":false
+            },
+            "p_out":{
+              "flow":false,
+              "touching":false,
+              "touchingb":true,
+              "vehId1":true,
+              "vehId2":true,
+              "vehId3":true,
+              "vehId4":true,
+              "vehId5":true
+            }
+          },
+          "pos":[
+            1026,
+            -1507
+          ],
+          "type":"vehicle/touching"
         }
       },
       "showTab":true,
@@ -2896,10 +3285,10 @@
         "list":{}
       },
       "viewPos":[
-        864.23266601562500000000,
-        -973.03045654296875000000
+        -270.94107055664062500000,
+        -321.29830932617187500000
       ],
-      "viewZoom":0.50000000000000000000
+      "viewZoom":0.25000000000000000000
     },
     "258":{
       "description":"This is the description for graph New State",
@@ -3098,10 +3487,10 @@
         "list":{}
       },
       "viewPos":[
-        -10.33325195312500000000,
-        -293
+        -196.63694763183593750000,
+        -507.12652587890625000000
       ],
-      "viewZoom":1
+      "viewZoom":0.74999994039535522461
     }
   },
   "isScenario":true,
